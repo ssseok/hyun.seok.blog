@@ -35,7 +35,7 @@ export default {
       resume: `https://docs.google.com/document/d/1RaFKfZ_nh5dd_-19pQ4yolYMSTvn8qMnZ9MML5vNhYw/edit`,
     },
     dropdown: {
-      naver: 'https://blog.naver.com/luckseok1',
+      velog: 'https://blog.naver.com/luckseok1',
       tistory: 'https://luckseok.tistory.com/',
     },
   },

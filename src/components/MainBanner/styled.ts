@@ -47,6 +47,9 @@ export const Wrapper = styled.div`
       width: 100px;
     }
   }
+  .gatsby-image-wrapper-constrained {
+    position: absolute !important;
+  }
 `;
 
 export const IntroWrapper = styled.div`
