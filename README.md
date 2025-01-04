@@ -46,7 +46,7 @@ Github Page, Netlify, Vercel 등 원하시는 배포 환경을 사용하시면 �
 
 #### 🔧 Netlify로 만들기
 
-아래 버튼을 사용하면, 개인 계정으로 템플릿 Repository 생성 및 Netlify 배포를 동시에 진행할 수 있습니다. 
+아래 버튼을 사용하면, 개인 계정으로 템플릿 Repository 생성 및 Netlify 배포를 동시에 진행할 수 있습니다.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/danmin20/danmin-gatsby-blog-template)
 
@@ -104,7 +104,7 @@ comments: {
 
 ### 3. 글쓴이 정보
 
-글쓴이(author)에 입력하신 정보는 메인 화면과 about 페이지에서 사용됩니다. 
+글쓴이(author)에 입력하신 정보는 메인 화면과 about 페이지에서 사용됩니다.
 
 ```ts
 author: {
@@ -220,10 +220,6 @@ remittance 정보는 Buy me a coffee 컴포넌트에 사용됩니다.
 
 ```js
 remittances: {
-  toss: {
-    link: 'https://toss.me/danmin',
-    qrCode: 'toss_qr.svg', // Path to your in the 'assets' folder
-  },
   kakaopay: {
     qrCode: 'kakao_qr.svg', // Path to your in the 'assets' folder
   },

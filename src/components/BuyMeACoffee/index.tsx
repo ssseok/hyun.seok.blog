@@ -3,7 +3,6 @@ import React, { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 
 import kakaoIcon from '@/assets/kakao_icon.svg';
-import tossIcon from '@/assets/toss_icon.svg';
 
 import Image from '../Image';
 import * as S from './styled';
@@ -15,10 +14,6 @@ const BuyMeACoffee: React.FC = () => {
         site {
           siteMetadata {
             remittances {
-              toss {
-                link
-                qrCode
-              }
               kakaopay {
                 qrCode
               }
@@ -30,7 +25,7 @@ const BuyMeACoffee: React.FC = () => {
   );
 
   const remittance = site.siteMetadata.remittances;
-  const { toss, kakaopay } = remittance;
+  const { kakaopay } = remittance;
 
   const [isModalOpened, setIsModalOpened] = useState(false);
   const [html, setHtml] = useState<HTMLHtmlElement | null>(null);
@@ -65,12 +60,6 @@ const BuyMeACoffee: React.FC = () => {
             <S.Modal>
               <S.Title>Buy Me A Coffee ☕️</S.Title>
               <S.Content>
-                {toss.link && (
-                  <S.List>
-                    <div>토스 익명송금</div>
-                    <a href={toss.link}>toss.me/danmin</a>
-                  </S.List>
-                )}
                 <S.List>
                   <div>송금 QR</div>
                   <S.Qr style={{ width: 30 }}>
@@ -78,12 +67,6 @@ const BuyMeACoffee: React.FC = () => {
                       <div>
                         <img src={kakaoIcon} />
                         <Image alt='kakaopay' src={kakaopay.qrCode} />
-                      </div>
-                    )}
-                    {toss.qrCode && (
-                      <div>
-                        <img src={tossIcon} />
-                        <Image alt='toss' src={toss.qrCode} />
                       </div>
                     )}
                   </S.Qr>
