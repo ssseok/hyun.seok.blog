@@ -1,5 +1,5 @@
 ---
-emoji: 🧑🏻‍💻
+emoji: ❤️
 title: '1주년'
 date: '2024-01-04'
 categories: Love
