@@ -21,7 +21,7 @@ const Header: React.FC<HeaderProps> = ({ title, location }) => {
           </div>
           <div className='mobile-only mobile-logo'>
             <S.MenuLink to='/' isselected='false'>
-              D
+              S
             </S.MenuLink>
           </div>
         </div>
