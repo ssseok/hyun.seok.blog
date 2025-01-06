@@ -63,9 +63,9 @@ const MainBanner: React.FC<MainBannerProps> = ({ author }) => {
         </S.SocialWrapper>
       </S.IntroWrapper>
 
-      <S.BuyMeACoffeeWrapper>
+      {/* <S.BuyMeACoffeeWrapper>
         <BuyMeACoffee />
-      </S.BuyMeACoffeeWrapper>
+      </S.BuyMeACoffeeWrapper> */}
     </S.Wrapper>
   );
 };
