@@ -87,7 +87,7 @@ const config: GatsbyConfig = {
               }
             `,
             output: '/rss.xml',
-            title: 'jeong-min.com RSS Feed',
+            title: 'hyun-seok.com RSS Feed',
             match: '^/blog/',
             link: 'https://feeds.feedburner.com/gatsby/blog',
           },
@@ -104,8 +104,8 @@ const config: GatsbyConfig = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://jeong-min.com/',
-        sitemap: 'https://jeong-min.com/sitemap.xml',
+        host: 'https://hyun-seok.com/',
+        sitemap: 'https://hyun-seok.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },

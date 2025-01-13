@@ -61,8 +61,7 @@ export const pageQuery = graphql`
             resume
           }
           dropdown {
-            velog
-            tistory
+            naver
           }
         }
         timestamps {
