@@ -1,7 +1,7 @@
 ---
 emoji: 🖍️
 title: 'CSS Grid vs FlexBox 언제 사용해야 할까?'
-date: '2025-01-09'
+date: '2025-01-08'
 categories: Dev
 ---
 
