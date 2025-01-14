@@ -9,7 +9,7 @@ categories: Project
 
 > "결과의 변경 없이 코드의 구조를 재조정함"이란 뜻
 
-## 1. 리팩토링
+## 리팩토링
 
 JavaScript 전체코드가 너무 길어져서 가독성을 높히기위해 파일을 나누고 리팩토링이란걸 해보겠습니다.
 
@@ -23,7 +23,7 @@ JavaScript 전체코드가 너무 길어져서 가독성을 높히기위해 파�
 
 이렇게 다섯가지로 나눠볼려고한다.
 
-## 2. main.js
+## 1. main.js
 
 ```javascript
 // main.js
@@ -61,7 +61,7 @@ function initializeGame() {
 }
 ```
 
-## 3. view.js
+## 2. view.js
 
 ```javascript
 // 오목판 생성 함수
@@ -101,7 +101,7 @@ export function createPlacementBoard(go) {
 }
 ```
 
-## 4. gameLogic.js
+## 3. gameLogic.js
 
 ```javascript
 // 게임 상태 변수
@@ -168,7 +168,7 @@ function countStones(row, col, dx, dy, player) {
 export { boardState, currentPlayer };
 ```
 
-## 5. eventHandlers.js
+## 4. eventHandlers.js
 
 ```javascript
 import { boardState, switchPlayer, checkWin, resetBoardState, currentPlayer } from './gameLogic.js';
@@ -211,7 +211,7 @@ export function addEventListeners(go) {
 }
 ```
 
-## 6. rules.js
+## 5. rules.js
 
 ```javascript
 import { boardState } from './gameLogic.js';
