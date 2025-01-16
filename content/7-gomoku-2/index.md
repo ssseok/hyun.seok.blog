@@ -502,7 +502,7 @@ function countStones(row, col, dx, dy, player) {
 - ~~흑돌일 때 33 규칙 넣기~~
 - ~~버그 찾아서 고치기~~
 - 리팩토링하기
-- (흑돌, 백돌 각각의)스탑워치 놓기
+- (흑돌, 백돌 각각의) 스탑워치 놓기
 - WebRCT 이용해서 실시간으로 채팅이나, 게임방 만들기
 
 [출처](https://yermi.tistory.com/entry/Toy-Project-%EC%9D%B4%EB%B2%88%EC%97%90%EB%8A%94-%EC%9B%B9-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%98%A4%EB%AA%A9%EC%9D%B4%EB%8B%A42%F0%9F%8E%B2-JavaScript%EB%A1%9C-%EC%98%A4%EB%AA%A9-%EB%A1%9C%EC%A7%81-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0)
