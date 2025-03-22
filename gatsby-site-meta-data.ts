@@ -55,10 +55,6 @@ export default {
       title: 'PROJECT',
       category: 'Project',
     },
-    {
-      title: 'LOVE',
-      category: 'Love',
-    },
   ],
 
   /**
