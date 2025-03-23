@@ -13,7 +13,7 @@ export default {
    */
   comments: {
     utterances: {
-      repo: `ssseok/hyun-seok-blog`, //`danmin20/danmin-gatsby-blog`,
+      repo: `ssseok/hyun-seok-blog`,
     },
   },
 
@@ -32,7 +32,7 @@ export default {
     social: {
       github: `https://github.com/ssseok`,
       linkedIn: `https://www.linkedin.com/in/%ED%98%84%EC%84%9D-%EB%B0%95-a9179a243/`,
-      resume: `https://docs.google.com/document/d/1RaFKfZ_nh5dd_-19pQ4yolYMSTvn8qMnZ9MML5vNhYw/edit`,
+      resume: `https://www.figma.com/design/UoAKtEMCYGAjAKV88Bdkxr/%EB%B0%95%ED%98%84%EC%84%9D-%EC%9D%B4%EB%A0%A5%EC%84%9C?node-id=0-1&t=sLWLGyD4sZeeb0lg-1`,
     },
     dropdown: {
       naver: 'https://blog.naver.com/luckseok1',
@@ -54,6 +54,10 @@ export default {
     {
       title: 'PROJECT',
       category: 'Project',
+    },
+    {
+      title: '',
+      category: '',
     },
   ],
 
