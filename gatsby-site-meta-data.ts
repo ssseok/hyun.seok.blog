@@ -91,7 +91,7 @@ export default {
       title: 'wedding.invitation',
       description: 'React 기반으로 만든 모바일 결혼 청첩장입니다. 누구나 손쉽게 커스텀 할 수 있게끔 제작하였습니다.',
       techStack: ['TypeScript', 'React', 'TailwindCSS', 'Shadcn/UI'],
-      thumbnailUrl: 'https://imagedelivery.net/9PYUDgg_yiUa2u-j77sFBg/d5b8c0a2-13c7-4e81-70ee-20f263346200/tog', // Path to your in the 'assets' folder
+      thumbnailUrl: 'wedding.png', // Path to your in the 'assets' folder
       links: {
         post: '',
         github: 'https://github.com/ssseok/wedding.invitation',
@@ -104,8 +104,7 @@ export default {
       title: 'Why Stay?',
       description: '숙박 목적에 따른 분류로 안성맞춤 숙박 업체를 편하게 예약할 수 있는 웹 서비스입니다.',
       techStack: ['JavaScript', 'React', 'Redux-Toolkit', 'Styled-Components', 'React-Query', 'Axios'],
-      thumbnailUrl:
-        'https://user-images.githubusercontent.com/87220944/215426799-10b2114f-8015-489f-a306-08e2f11e2cac.jpg', // Path to your in the 'assets' folder
+      thumbnailUrl: 'why_stay.png', // Path to your in the 'assets' folder
       links: {
         post: '',
         github: 'https://github.com/ssseok/Why-Stay?tab=readme-ov-file',
