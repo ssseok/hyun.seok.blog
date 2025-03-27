@@ -23,7 +23,7 @@ export default {
   author: {
     name: `박현석`,
     nickname: `석이`,
-    stack: ['Frontend', 'React', 'Typescript'],
+    stack: ['Frontend', 'React', 'Typescript', 'TailwindCSS'],
     bio: {
       email: `luckseok1@gmail.com`,
       residence: 'Seoul, South Korea',
@@ -55,6 +55,10 @@ export default {
       title: 'PROJECT',
       category: 'Project',
     },
+    {
+      title: 'ERROR',
+      category: 'Error',
+    },
   ],
 
   /**
@@ -63,11 +67,19 @@ export default {
   timestamps: [
     {
       category: 'Activity',
-      date: '2023.06 - NOW',
+      date: '2023.06',
       en: 'Nextjs.kr',
       kr: '넥스트제이에스.코리아',
       info: 'Next.js Korea User Group',
       link: 'https://github.com/Nextjs-kr',
+    },
+    {
+      category: 'Activity',
+      date: '2022.08 - 2023.02',
+      en: 'Code States',
+      kr: '코드스테이츠',
+      info: 'Software Engineering Bootcamp Frontend',
+      link: 'https://www.codestates.com/',
     },
   ],
 
@@ -76,14 +88,28 @@ export default {
    */
   projects: [
     {
-      title: 'IntroMe',
-      description: '자기소개서를 작성할 때 필요한 여러 기능들이 합쳐진 웹서비스',
-      techStack: ['TypeScript', 'React', 'Redux', 'TailwindCSS', 'React-Query'],
-      thumbnailUrl: '', // Path to your in the 'assets' folder
+      title: 'wedding.invitation',
+      description: 'React 기반으로 만든 모바일 결혼 청첩장입니다. 누구나 손쉽게 커스텀 할 수 있게끔 제작하였습니다.',
+      techStack: ['TypeScript', 'React', 'TailwindCSS', 'Shadcn/UI'],
+      thumbnailUrl: 'https://imagedelivery.net/9PYUDgg_yiUa2u-j77sFBg/d5b8c0a2-13c7-4e81-70ee-20f263346200/tog', // Path to your in the 'assets' folder
       links: {
         post: '',
-        github: '',
-        demo: '',
+        github: 'https://github.com/ssseok/wedding.invitation',
+        demo: 'https://weddinginvitation-mu.vercel.app/',
+        googlePlay: '',
+        appStore: '',
+      },
+    },
+    {
+      title: 'Why Stay?',
+      description: '숙박 목적에 따른 분류로 안성맞춤 숙박 업체를 편하게 예약할 수 있는 웹 서비스입니다.',
+      techStack: ['JavaScript', 'React', 'Redux-Toolkit', 'Styled-Components', 'React-Query', 'Axios'],
+      thumbnailUrl:
+        'https://user-images.githubusercontent.com/87220944/215426799-10b2114f-8015-489f-a306-08e2f11e2cac.jpg', // Path to your in the 'assets' folder
+      links: {
+        post: '',
+        github: 'https://github.com/ssseok/Why-Stay?tab=readme-ov-file',
+        demo: 'http://whystay.p-e.kr/',
         googlePlay: '',
         appStore: '',
       },
