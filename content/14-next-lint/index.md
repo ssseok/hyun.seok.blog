@@ -1,5 +1,5 @@
 ---
-emoji: 🖍️
+emoji: ⚙️
 title: 'Next.js 15 + eslint + prttier + husky + lint-staged 으로 프로젝트 세팅하기'
 date: '2025-04-10'
 categories: Dev
