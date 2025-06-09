@@ -1,5 +1,5 @@
 ---
-emoji: 🙋🏻
+emoji: 🚨
 title: 'SSE(Server-Sent Events) 연결 트러블 슈팅'
 date: '2025-06-09'
 categories: Trouble-Shooting

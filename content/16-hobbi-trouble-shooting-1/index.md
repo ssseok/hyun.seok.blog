@@ -1,5 +1,5 @@
 ---
-emoji: 🙋🏻
+emoji: 🚨
 title: 'Next.js Middleware를 활용한 인증 라우팅 트러블 슈팅'
 date: '2025-06-09'
 categories: Trouble-Shooting

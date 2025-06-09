@@ -1,5 +1,5 @@
 ---
-emoji: 🙋🏻
+emoji: 🚨
 title: 'DTO 필드 변수의 prefix 이슈'
 date: '2025-06-09'
 categories: Trouble-Shooting
