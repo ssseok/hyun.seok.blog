@@ -56,8 +56,8 @@ export default {
       category: 'Project',
     },
     {
-      title: 'ERROR',
-      category: 'Error',
+      title: 'TROUBLE-SHOOTING',
+      category: 'Trouble-Shooting',
     },
   ],
 
