@@ -13,7 +13,7 @@ export default {
    */
   comments: {
     utterances: {
-      repo: `ssseok/hyun-seok-blog`,
+      repo: `ssseok/hyun.seok.blog`,
     },
   },
 
