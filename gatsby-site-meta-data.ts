@@ -23,7 +23,7 @@ export default {
   author: {
     name: `박현석`,
     nickname: `석이`,
-    stack: ['Frontend', 'React', 'Typescript', 'TailwindCSS'],
+    stack: ['Frontend', 'React', 'Typescript', 'TailwindCSS', 'Next.js'],
     bio: {
       email: `luckseok1@gmail.com`,
       residence: 'Seoul, South Korea',
@@ -67,6 +67,14 @@ export default {
   timestamps: [
     {
       category: 'Activity',
+      date: '2025.04 - 2025.06',
+      en: 'SWYP',
+      kr: '스위프',
+      info: 'SWYP WEB 9기',
+      link: 'https://swyp.framer.website',
+    },
+    {
+      category: 'Activity',
       date: '2023.06',
       en: 'Nextjs.kr',
       kr: '넥스트제이에스.코리아',
@@ -87,6 +95,19 @@ export default {
    * metadata for Playground Page
    */
   projects: [
+    {
+      title: 'HOBBi',
+      description: '취미를 더 즐겁고 행복하게 하는 커뮤니티 공간, 호비',
+      techStack: ['TypeScript', 'Next.js', 'TailwindCSS', 'Zustand', 'React-Query', 'Framer-Motion'],
+      thumbnailUrl: 'hobbi.png', // Path to your in the 'assets' folder
+      links: {
+        post: '',
+        github: 'https://github.com/SWYP-HOBBI',
+        demo: 'https://swyp-hobbi-front.vercel.app/',
+        googlePlay: '',
+        appStore: '',
+      },
+    },
     {
       title: 'wedding.invitation',
       description: 'React 기반으로 만든 모바일 결혼 청첩장입니다. 누구나 손쉽게 커스텀 할 수 있게끔 제작하였습니다.',
