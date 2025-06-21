@@ -1,5 +1,5 @@
 ---
-emoji: ⚙️
+emoji: 📕
 title: 'Storybook(Next.js)에 대해 알아보고 프로젝트에 적용해 보자!'
 date: '2025-06-13'
 categories: Dev
@@ -32,8 +32,8 @@ categories: Dev
 
 - 예시
   ```typescript
-    export const Primary = { args: { variant: 'primary', children: 'Primary' } };
-    export const Disabled = { args: { disabled: true, children: 'Disabled' } };
+  export const Primary = { args: { variant: 'primary', children: 'Primary' } };
+  export const Disabled = { args: { disabled: true, children: 'Disabled' } };
   ```
 
 ### Controls (Args/ArgTypes)
@@ -54,7 +54,6 @@ categories: Dev
 
 - API, 라우터, 상태관리(zustand, recoil 등)도 Storybook에서 mock하여 실제 서비스와 유사한 환경을 만들 수 있습니다.
 
-
 ## Storybook의 장점
 
 - **UI 컴포넌트 개발 속도 향상**: 페이지 전체가 아니라, 컴포넌트만 빠르게 개발/테스트 가능
@@ -67,6 +66,7 @@ categories: Dev
 ```
 npm create storybook@latest
 ```
+
 - 설치하면 자동으로 플러그인 설치도 설치해줍니다.
 
 하지만 설치하고 storybook을 실행보니 에러가 발생합니다.
@@ -95,15 +95,17 @@ Original error: Invalid PostCSS Plugin found at: plugins[0]
 
 (@./postcss.config.mjs)
 ```
-- 에러에 대해서 살펴보니 **@tailwindcss/postcss** plugins를  **@tailwindcss/postcss": {}** 이런식으로 바꿔달라는 에러인거 같다.
+
+- 에러에 대해서 살펴보니 **@tailwindcss/postcss** plugins를 **@tailwindcss/postcss": {}** 이런식으로 바꿔달라는 에러인거 같다.
 
 ```typescript
 const config = {
-  plugins: ["@tailwindcss/postcss"],
+  plugins: ['@tailwindcss/postcss'],
 };
 
 export default config;
 ```
+
 - ❌
 
 ```typescript
@@ -115,6 +117,7 @@ const config = {
 
 export default config;
 ```
+
 - ✅ 으로 바꿔주면 실행이됩니다.
 
 ## 스토리북 tailwindCSS 설정 (Next.js)
@@ -126,12 +129,10 @@ npm install tailwindcss @tailwindcss/vite
 ```typescript
 // vite.config.ts
 
-import tailwindcss from '@tailwindcss/vite'
+import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
-  plugins: [
-    tailwindcss(),
-  ],
-})
+  plugins: [tailwindcss()],
+});
 ```
 
 ```typescript
@@ -154,6 +155,7 @@ const preview: Preview = {
 
 export default preview;
 ```
+
 - preview 에 import '../src/app/globals.css'; 추가해주셔야 tailwindcss가 적용됩니다.
 
 ### 예시
@@ -176,8 +178,7 @@ const sizeStyles = {
 
 const variantStyles = {
   primary: 'bg-primary text-primary-b80 hover:bg-primary/80',
-  outline:
-    'border border-primary-b60 bg-grayscale-0 text-primary-b60 hover:bg-primary-b60 hover:text-grayscale-0',
+  outline: 'border border-primary-b60 bg-grayscale-0 text-primary-b60 hover:bg-primary-b60 hover:text-grayscale-0',
   secondary: 'bg-grayscale-10 text-grayscale-50',
 };
 
@@ -218,6 +219,7 @@ export default function Button({
   );
 }
 ```
+
 - 기존에 공동컴포넌트 였던 Button으로 예시를 들겠습니다.
 
 ```typescript
@@ -243,14 +245,12 @@ const meta: Meta<typeof Button> = {
     variant: {
       control: 'select',
       options: ['primary', 'outline', 'secondary'],
-      description:
-        '버튼의 스타일(색상/테두리 등)을 지정합니다. (primary: 메인, outline: 외곽선, secondary: 보조)',
+      description: '버튼의 스타일(색상/테두리 등)을 지정합니다. (primary: 메인, outline: 외곽선, secondary: 보조)',
     },
     size: {
       control: 'select',
       options: ['sm', 'md', 'lg', 'xl'],
-      description:
-        '버튼의 크기를 설정합니다. (sm: 작음, md: 보통, lg: 큼, xl: 매우 큼)',
+      description: '버튼의 크기를 설정합니다. (sm: 작음, md: 보통, lg: 큼, xl: 매우 큼)',
     },
     fullWidth: {
       control: 'boolean',
@@ -323,16 +323,16 @@ export const Sizes: Story = {
           width: 220,
         }}
       >
-        <Button {...args} size="sm">
+        <Button {...args} size='sm'>
           Small
         </Button>
-        <Button {...args} size="md">
+        <Button {...args} size='md'>
           Medium
         </Button>
-        <Button {...args} size="lg">
+        <Button {...args} size='lg'>
           Large
         </Button>
-        <Button {...args} size="xl">
+        <Button {...args} size='xl'>
           XLarge
         </Button>
       </div>
@@ -353,8 +353,9 @@ export const Sizes: Story = {
 - 스토리북 좌측 네비게이션에 표시될 컴포넌트/스토리의 경로입니다.
 
 ```typescript
-  title: 'Button/Button'
+title: 'Button/Button';
 ```
+
 → "Button" 폴더 아래 "Button" 컴포넌트로 표시
 
 ![](01.png)
@@ -367,9 +368,9 @@ export const Sizes: Story = {
 
 - **스토리북 전체 설정/문서화/레이아웃 등**을 지정합니다.
 - 주요 예시
-    - layout: 'centered', 'fullscreen', 'padded' 등 미리보기 레이아웃
-    - docs.description.component: 컴포넌트 전체 설명(문서화)
-    - 기타: actions, backgrounds, viewport 등 다양한 글로벌 설정 가능
+  - layout: 'centered', 'fullscreen', 'padded' 등 미리보기 레이아웃
+  - docs.description.component: 컴포넌트 전체 설명(문서화)
+  - 기타: actions, backgrounds, viewport 등 다양한 글로벌 설정 가능
 
 ![](02.png)
 
@@ -381,9 +382,9 @@ export const Sizes: Story = {
 
 - **props(Args)의 타입, 설명, 컨트롤 UI**를 지정합니다.
 - 각 prop별로
-    - control: 스토리북 UI에서 조작할 수 있는 컨트롤 타입(예: select, boolean, text 등)
-    - options: select 컨트롤의 옵션 값
-    - description: 한글/영문 설명(문서화에 자동 반영)
+  - control: 스토리북 UI에서 조작할 수 있는 컨트롤 타입(예: select, boolean, text 등)
+  - options: select 컨트롤의 옵션 값
+  - description: 한글/영문 설명(문서화에 자동 반영)
 
 ### args
 
@@ -394,7 +395,6 @@ export const Sizes: Story = {
 스토리북을 프로젝트에 적용해보았는데, 사실 처음 프로젝트할 때 시간이 촉박할거같아서 스토리북은 뒤에 나중에 적용하자고 했지만 막상 사용해보고, 공통컴포넌트 만들어 놓으니깐 어려운 작업은 아니였던거같다.
 
 다음에는 스토리북을 배포하는 방법에 대해서 작성해보도록 하겠습니다.
-
 
 ```toc
 
