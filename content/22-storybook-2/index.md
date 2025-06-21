@@ -1,5 +1,5 @@
 ---
-emoji:📗
+emoji: 📗
 title: 'Storybook 적용을 해봤다면 배포까지 해보자👀'
 date: '2025-06-14'
 categories: Dev
