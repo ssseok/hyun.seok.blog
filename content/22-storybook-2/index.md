@@ -19,7 +19,7 @@ categories: Dev
 
 스토리북 관리자가 만든 무료 배포 서비스인 Chromatic을 사용하여 안전하게 배포하고 호스팅 할 수 있습니다.
 
-| | |
+|             |             |
 | ----------- | ----------- |
 | ![](01.png) | ![](02.png) |
 
@@ -46,15 +46,17 @@ CHROMATIC_PROJECT_TOKEN=자기 토큰 값
 	"chromatic": "chromatic --project-token=$CHROMATIC_PROJECT_TOKEN"
 	}
 ```
+
 - npm run chromatic 으로 하면 배포됩니다.
 - CHROMATIC_PROJECT_TOKEN 은 .env 파일에 넣어줬습니다.
 
-
 ---
+
+## 참고
 
 [스토리북 공식문서 배포](https://storybook.js.org/tutorials/intro-to-storybook/react/ko/deploy/)
 
-[](https://llbllhllk.tistory.com/133)
+[강기봉의 현란한 날갯짓 블로그](https://llbllhllk.tistory.com/133)
 
 [크로마틱](https://www.chromatic.com/)
 
