@@ -1,6 +1,6 @@
 ---
 emoji: 👀
-title: '[HOBBi] Splash Screen을 구현해보자!'
+title: '[HOBBi] Splash Screen을 구현해 보자!'
 date: '2025-06-10'
 categories: Project
 ---
