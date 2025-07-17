@@ -1,5 +1,5 @@
 ---
-emoji:📘
+emoji: 📘
 title: '크로마틱을 통한 지속적 배포(CI)를 구축해보자🙋🏻(+트러블 슈팅)'
 date: '2025-06-30'
 categories: Dev
