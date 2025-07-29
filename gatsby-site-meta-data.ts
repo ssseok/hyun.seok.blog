@@ -23,7 +23,7 @@ export default {
   author: {
     name: `박현석`,
     nickname: `석이`,
-    stack: ['Frontend', 'React', 'Typescript', 'TailwindCSS', 'Next.js'],
+    stack: ['기록하는 것', '도움 주는 개발', '공유하는 것'],
     bio: {
       email: `luckseok1@gmail.com`,
       residence: 'Seoul, South Korea',
