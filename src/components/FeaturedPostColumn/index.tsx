@@ -13,7 +13,7 @@ const FeaturedPostColumn: React.FC<FeaturedPostColumnProps> = ({ title, posts, f
   return (
     <S.Wrapper>
       <S.Title fill={fill ? 'true' : 'false'}>{title}</S.Title>
-      {posts.map((post, index) => (
+      {posts.slice(0, 5).map((post, index) => (
         <FeaturedPostCard key={index} post={post} />
       ))}
     </S.Wrapper>
