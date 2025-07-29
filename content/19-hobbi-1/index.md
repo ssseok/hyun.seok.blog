@@ -5,6 +5,8 @@ date: '2025-06-10'
 categories: Project
 ---
 
+react createPortal 을 적용해 보고, 공부해 본 것 기록해 봅니다.
+
 ## Splash Screen 이란?
 
 애플리케이션이 시작될 때 기본 인터페이스나 콘텐츠가 로드되기 전까지 일시적으로 표시되는 초기 화면을 말합니다.
