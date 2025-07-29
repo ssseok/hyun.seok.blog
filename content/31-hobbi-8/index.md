@@ -1,7 +1,7 @@
 ---
 emoji: 🫡
 title: '[HOBBi] 게시글 수정 페이지 구현'
-date: '2025-07-22'
+date: '2025-07-23'
 categories: Project
 ---
 
